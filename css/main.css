@@ -1,0 +1,429 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Ropa+Sans);
+@import url("../bootstrap/css/bootstrap.css");
+@import url("../bootstrap/css/bootstrap-responsive.css");
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+/*body {
+    font-size: 1em;
+}*/
+
+a {
+    color: #333;
+}
+
+a:visited {
+    color: #333;
+}
+
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* IRAC COLOR SCHEME 
+
+YELLOW = #E3C100
+BLUE = #63E1D3
+MAGENTA = #862051
+
+*/
+
+
+body {
+    padding-right: 0;
+    padding-left: 0;
+    background-color: #ddd;
+}
+
+
+
+h1, h2, h3, h4, h5 {
+    color: #333;
+    font-style: italic;  
+}
+
+.navbar-inner {
+    -webkit-border-radius: 0px;
+       -moz-border-radius: 0px;
+            border-radius: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+
+.fixed-navbar {
+    position: fixed;
+    width: 100%;
+}
+
+/*.navbar .btn-navbar .icon-bar{
+    background-color: #da669e;
+}*/
+
+.navbar-inverse .navbar-search .search-query {
+    background-color: #eee;
+    border-radius: 3px;
+    line-height: inherit;
+}
+input, textarea, .uneditable-input {
+    width: 130px;
+}
+
+
+.irac-top-border{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #63E1D3;
+    background: -moz-linear-gradient(left, #63e1d3 18%, #e3c100 45%, #e3c100 59%, #862051 77%); 
+    background: -webkit-gradient(linear, left top, right top, color-stop(18%,#63e1d3), color-stop(45%,#e3c100), color-stop(59%,#e3c100), color-stop(77%,#862051));
+    background: -webkit-linear-gradient(left, #63e1d3 18%,#e3c100 45%,#e3c100 59%,#862051 77%); 
+    background: -o-linear-gradient(left, #63e1d3 18%,#e3c100 45%,#e3c100 59%,#862051 77%);
+    background: -ms-linear-gradient(left, #63e1d3 18%,#e3c100 45%,#e3c100 59%,#862051 77%); 
+    background: linear-gradient(to right, #63e1d3 18%,#e3c100 45%,#e3c100 59%,#862051 77%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63e1d3', endColorstr='#862051',GradientType=1 );
+}
+
+#myBrand {
+    color: #c3f3ee; 
+    font-family: "Ropa Sans";
+    letter-spacing: 0.08em;
+}
+
+#mySubCaption{
+font-family: "Helvetica Neue";
+letter-spacing: 1px;
+font-weight: 100;
+font-style: italic;
+line-height: 42px;
+margin-left: -4px;
+margin-right: 60px;
+color: #fff6c6;
+}
+
+
+section.content{
+    padding: 52px 6px 6px 6px;
+    overflow: scroll;
+    font-family: Palatino;
+}
+
+
+section.large{
+    display: block;
+    background-color: #fff;
+    padding: 8px;    
+    border-bottom: 1px solid #ccc;
+    max-width: 100%;
+}
+
+
+a section.medium{
+    display: block;
+    background-color: #fff;
+    padding: 8px;    
+    border-bottom: 1px solid #ccc;
+    max-width: 890px;
+    height: 110px;
+    margin-bottom: 6px;
+    overflow: hidden;
+}
+
+a section.medium:hover{
+    background-color: #eee;
+}
+
+#intro{
+    min-height: 240px;
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    padding: 8px;    
+    border-bottom: 1px solid #ccc;
+    max-width: 890px;    
+}
+
+#intro h2{
+    font: normal 4em/4em "Ropa Sans";
+}
+
+
+.collapse {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+     -moz-transition: height 0.35s ease;
+       -o-transition: height 0.35s ease;
+          transition: height 0.35s ease;
+}
+
+.collapse.in {
+  height: auto;
+}
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/* Prevent callout */
+
+.nocallout {
+    -webkit-touch-callout: none;
+}
+
+.pressed {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* A hack for HTML5 contenteditable attribute on mobile */
+
+textarea[contenteditable] {
+    -webkit-appearance: none;
+}
+
+/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
+   they have been set as display: none */
+
+.gifhidden {
+    position: absolute;
+    left: -100%;
+}
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0;
+    direction: ltr;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -999em;
+}
+
+.ir br {
+    display: none;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/**
+ * Clearfix helper
+ * Used to contain floats: h5bp.com/q
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+
+/* Specifikt för desktopklienter */
+
+@media only screen and (min-width: 980px) {
+    /* Style adjustments for viewports that meet the condition */
+    .icon-chevron-right {
+        display:none;
+    }
+
+    .navbar-inner{
+        padding-left: 13px;
+    }
+
+    #mySubCaption{
+    margin-left: -14px;
+    margin-right: 60px;
+    }
+
+    section{
+        margin: 0 auto;
+    }
+
+    section.large{
+        padding-right: 20%;
+        padding-left: 40px;
+        max-width: 50%;
+    }
+
+    a section.medium{
+        padding-right: 20%;
+        padding-left: 40px;
+        max-width: 50%;
+    }
+
+
+}
+
+/* Specifikt för iPad */
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 780px) {
+    /* Style adjustments for viewports that meet the condition */
+ 
+
+    section.large{
+        padding-right: 25%;
+        padding-left: 20px;
+        max-width: 100%;
+        background-color: red;
+    }
+
+
+}
+
+
+/* Specifikt för iPhone (i landskapsläge) */
+@media only screen and (max-device-width: 320px) and (orientation:landscape) {
+    
+    .fixed-navbar {
+    position: relative;
+    width: 100%;
+    }
+    
+    section.content{
+    margin-top: -14px;
+    padding-top: 0;
+    overflow: scroll;
+    }
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for viewports that meet the condition */
+}

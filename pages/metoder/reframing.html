@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <title>IRAC - mobil kundplattform</title>
+        <meta name="description" content="Application suited to the needs of IRAC's customers">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+
+        <script>
+            if(("standalone" in window.navigator) && window.navigator.standalone){
+
+            // If you want to prevent remote links in standalone web apps opening Mobile Safari, change 'remotes' to true
+            var noddy, remotes = true;
+            document.addEventListener('click', function(event) {
+                noddy = event.target;
+
+            // Bubble up until we hit link or top HTML element. Warning: BODY element is not compulsory so better to stop on HTML
+            while(noddy.nodeName !== "A" && noddy.nodeName !== "HTML") {
+                noddy = noddy.parentNode;
+            }
+            if('href' in noddy && noddy.href.indexOf('http') !== -1 && (noddy.href.indexOf(document.location.host) !== -1 || remotes))
+            {
+                event.preventDefault();
+                document.location.href = noddy.href;
+            }
+                },false);
+            }
+        </script>
+
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" href="../../css/main.css">
+        <script src="../../js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    
+    <body>
+
+        <!-- Add your site or application content here -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+        <script src="../../js/vendor/jquery-1.8.2.min.js"></script>
+        <script src="../../bootstrap/js/bootstrap.min.js"></script>
+        <script src="../../js/vendor/zepto.min.js"></script>
+        <script src="../../js/helper.js"></script>
+
+
+
+    <!-- IRAC NAVIGATION -->
+    <header>
+        <nav class="fixed-navbar">
+            <div class="irac-top-border"></div>   
+            <div class="navbar navbar-inverse">
+    
+                <div class="navbar-inner">
+                    <div class="container">
+             
+                        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse" >
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+
+                            <!-- Be sure to leave the brand out there if you want it shown -->
+                            <div class="pull-left">
+                                <a id="myBrand" class="brand" href="../index.html">IRAC</a>
+                                <span id="mySubCaption">kundplattform</span>
+                            </div>
+                          
+                        <!-- Everything you want hidden at 940px or less, place within here -->
+                        <div class="nav-collapse">
+                        
+                            <!-- .nav, .navbar-search, .navbar-form, etc -->
+                            
+                            <!-- <form class="navbar-search pull-right">                        
+                                <div class="input-append">
+                                    <input type="text" class="span2 search-query" placeholder="Search">
+                                    <button type="submit" class="btn btn-inverse"><i class="icon-search icon-white"></i></button>
+                                </div>
+                            </form> -->
+
+                            <ul class="nav pull-right">
+                                <li><a href="../../index.html">Startsida<i class="icon-chevron-right icon-white pull-right"></i></a></li>
+                                <li><a href="../introduktion.html">Introduktion<i class="icon-chevron-right icon-white pull-right"></i></a></li>
+                                <li class="active"><a href="../metoder.html">Metoder &amp; tjänster<i class="icon-chevron-right icon-white pull-right"></i></a></li>
+                                <li><a href="../dokument.html">Dokumentarkiv<i class="icon-chevron-right icon-white pull-right"></i></a></li>
+                                <li><a href="../kundsidor.html">Kundsidor<i class="icon-chevron-right icon-white pull-right"></i></a></li>
+                                <li><a href="../kontakt.html">Kontakt<i class="icon-chevron-right icon-white pull-right"></i></a></li>
+                            </ul>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+        </nav>  
+    </header>
+    
+   
+    <section class="content">
+
+        <a href="#">
+            <section class="large">
+                <header>
+                    <h2>Reframing</h2>
+                </header>
+                <article>
+                    
+                    <p>En vanligt förekommande teknik för kreativt tänkande är brainstorming, där vi associerar fritt och kommer upp med ett stort antal nya idéer. Brainstorming är användbart för att generera många idéer, men tar oss sällan utanför vår mentala komfortzon, våra invanda tankemönster.</p> 
+
+                    <p>För att vara sant kreativ, för att tänka tankar vi tidigare inte tänkt, behöver vi hitta sätt att bryta dessa mönster. Om vi istället, med hjälp av specifika metoder och verktyg, styr vårt tänkande i riktningar det inte vill gå - kan vi erövra nya mentala territorier och upptäcka saker vi tidigare inte vetat om.</p>
+
+                    <p>Reframing (omformulering) är en bedrägligt enkel metod, med oerhört många användningsområden. Metoden bygger på filosofiska insikter kring hur vi skapar mening av det vi ser omkring oss i världen, och hur vi utvecklar egna teorier.</p>
+
+                    <strong><h4>Användningsområden för reframing:</h4></strong>
+
+                    <p><strong>Projekt:</strong> med hjälp av reframing kan vi omformulera resultat, deadlines, riktningar, deltagande, osv.</p>
+                    <p><strong>Planering:</strong> vi kan omformulera uppsatta mål, strukturer, arbetsflöden, samarbeten, inspiration, osv.</p>
+                    <p><strong>Förhandling:</strong> vi kan omformulera både våra egna och våra förhandlingspartners uppfattningar och förförståelser, för att förstå deras perspektiv eller för att "vinna över" dem på vår sida.</p>
+                </article>
+            </section>
+        </a>
+
+
+
+
+    </section> <!-- Content -->
+
+
+
+
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
+        
+
+
+
+        <script>
+            var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+            g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+            s.parentNode.insertBefore(g,s)}(document,"script"));-->
+        </script>
+    </body>
+</html>
